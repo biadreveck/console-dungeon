@@ -8,10 +8,16 @@ Este projeto é uma implementação de um jogo Dungeon. Ele é jogado inteiramen
 
 ------------
 
-#### Usando localmente no Windows:
-Para rodar o jogo localmente é necessário executar os seguintes passos:
+#### Rodando localmente no Windows:
+
+##### Usando console
+1. Clonar esse repositório em qualquer diretório
+2. Executar o arquivo **ConsoleDungeon.exe** no diretório: **cd [DIRETORIO_CLONADO]\publish**
+
+##### Usando .NET Core Sdk
 1. Instalar as ferramentas abaixo na máquina local:
 	- .NET Core 3.1+
 2. Clonar esse repositório em qualquer diretório
-3. Ir para o diretório do projeto: **cd [DIRETORIO_CLONADO]\ConsoleDungeon**
-4. No diretório clonado, rodar a aplicação usando: **dotnet run**
+3. Abrir a linha de comando
+4. Ir para o diretório do projeto: **cd [DIRETORIO_CLONADO]\ConsoleDungeon**
+5. No diretório clonado, rodar a aplicação usando: **dotnet run**

@@ -60,10 +60,10 @@ namespace ConsoleDungeon.Screens
                 // Move o inimigo em direção ao jogador, se puder
                 if (State.CanMoveEnemy)
                 {
-                    var path = RouteHelper.FindShortestPath(State.CurrentMap, State.Enemy.Room, State.Player.Room);
-                    if (path != null && path.Count > 0)
+                    var nextEnemyRoom = RouteHelper.FindNextRoom(State.CurrentMap, State.Enemy.Room, State.Player.Room);
+                    if (nextEnemyRoom != null)
                     {
-                        State.Enemy.MoveTo(path.First());
+                        State.Enemy.MoveTo(nextEnemyRoom);
                     }
                     else
                     {

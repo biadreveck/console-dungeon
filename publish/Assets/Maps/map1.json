@@ -1,0 +1,256 @@
+{
+  "enemyStart": "room1",
+  "playerStart": "room13",
+  "rooms": {
+    "room1": {
+      "code": "room1",
+      "name": "Room 1",
+      "item": null,
+      "isLocked": false,
+      "north": null,
+      "south": "room6",
+      "east": "room2",
+      "west": null
+    },
+    "room2": {
+      "code": "room2",
+      "name": "Room 2",
+      "item": null,
+      "isLocked": false,
+      "north": null,
+      "south": "room7",
+      "east": "room3",
+      "west": "room1"
+    },
+    "room3": {
+      "code": "room3",
+      "name": "Room 3",
+      "item": null,
+      "isLocked": false,
+      "north": null,
+      "south": "room8",
+      "east": "room4",
+      "west": "room2"
+    },
+    "room4": {
+      "code": "room4",
+      "name": "Room 4",
+      "item": null,
+      "isLocked": false,
+      "north": null,
+      "south": "room9",
+      "east": "room5",
+      "west": "room3"
+    },
+    "room5": {
+      "code": "room5",
+      "name": "Room 5",
+      "item": "greatPotion",
+      "isLocked": false,
+      "north": null,
+      "south": "room10",
+      "east": null,
+      "west": "room4"
+    },
+    "room6": {
+      "code": "room6",
+      "name": "Room 6",
+      "item": null,
+      "isLocked": false,
+      "north": "room1",
+      "south": "room11",
+      "east": "room7",
+      "west": null
+    },
+    "room7": {
+      "code": "room7",
+      "name": "Room 7",
+      "item": null,
+      "isLocked": false,
+      "north": "room2",
+      "south": "room12",
+      "east": "room8",
+      "west": "room6"
+    },
+    "room8": {
+      "code": "room8",
+      "name": "Room 8",
+      "item": null,
+      "isLocked": false,
+      "north": "room3",
+      "south": "room13",
+      "east": "room9",
+      "west": "room7"
+    },
+    "room9": {
+      "code": "room9",
+      "name": "Room 9",
+      "item": null,
+      "isLocked": false,
+      "north": "room4",
+      "south": "room14",
+      "east": "room10",
+      "west": "room8"
+    },
+    "room10": {
+      "code": "room10",
+      "name": "Room 10",
+      "item": null,
+      "isLocked": false,
+      "north": "room5",
+      "south": "room15",
+      "east": null,
+      "west": "room9"
+    },
+    "room11": {
+      "code": "room11",
+      "name": "Room 11",
+      "item": "potion",
+      "isLocked": false,
+      "north": "room6",
+      "south": "room16",
+      "east": "room12",
+      "west": null
+    },
+    "room12": {
+      "code": "room12",
+      "name": "Room 12",
+      "item": null,
+      "isLocked": false,
+      "north": "room7",
+      "south": "room17",
+      "east": "room13",
+      "west": "room11"
+    },
+    "room13": {
+      "code": "room13",
+      "name": "Room 13",
+      "item": null,
+      "isLocked": false,
+      "north": "room8",
+      "south": "room18",
+      "east": "room14",
+      "west": "room12"
+    },
+    "room14": {
+      "code": "room14",
+      "name": "Room 14",
+      "item": null,
+      "isLocked": false,
+      "north": "room9",
+      "south": "room19",
+      "east": "room15",
+      "west": "room13"
+    },
+    "room15": {
+      "code": "room15",
+      "name": "Room 15",
+      "item": null,
+      "isLocked": false,
+      "north": "room10",
+      "south": "room20",
+      "east": null,
+      "west": "room14"
+    },
+    "room16": {
+      "code": "room16",
+      "name": "Room 16",
+      "item": null,
+      "isLocked": false,
+      "north": "room11",
+      "south": "room21",
+      "east": "room17",
+      "west": null
+    },
+    "room17": {
+      "code": "room17",
+      "name": "Room 17",
+      "item": null,
+      "isLocked": false,
+      "north": "room12",
+      "south": "room22",
+      "east": "room18",
+      "west": "room16"
+    },
+    "room18": {
+      "code": "room18",
+      "name": "Room 18",
+      "item": null,
+      "isLocked": false,
+      "north": "room13",
+      "south": "room23",
+      "east": "room19",
+      "west": "room17"
+    },
+    "room19": {
+      "code": "room19",
+      "name": "Room 19",
+      "item": null,
+      "isLocked": false,
+      "north": "room14",
+      "south": "room24",
+      "east": "room20",
+      "west": "room18"
+    },
+    "room20": {
+      "code": "room20",
+      "name": "Room 20",
+      "item": null,
+      "isLocked": false,
+      "north": "room15",
+      "south": "room25",
+      "east": null,
+      "west": "room19"
+    },
+    "room21": {
+      "code": "room21",
+      "name": "Room 21",
+      "item": "key",
+      "isLocked": false,
+      "north": "room16",
+      "south": null,
+      "east": "room22",
+      "west": null
+    },
+    "room22": {
+      "code": "room22",
+      "name": "Room 22",
+      "item": null,
+      "isLocked": false,
+      "north": "room17",
+      "south": null,
+      "east": "room23",
+      "west": "room21"
+    },
+    "room23": {
+      "code": "room23",
+      "name": "Room 23",
+      "item": null,
+      "isLocked": false,
+      "north": "room18",
+      "south": null,
+      "east": "room24",
+      "west": "room22"
+    },
+    "room24": {
+      "code": "room24",
+      "name": "Room 24",
+      "item": null,
+      "isLocked": false,
+      "north": "room19",
+      "south": null,
+      "east": "room25",
+      "west": "room23"
+    },
+    "room25": {
+      "code": "room25",
+      "name": "Room 25",
+      "item": "sword",
+      "isLocked": true,
+      "north": "room20",
+      "south": null,
+      "east": null,
+      "west": "room24"
+    }
+  }
+}

@@ -57,13 +57,5 @@ namespace ConsoleDungeon.Models
 
             return availableRooms;
         }
-
-        public bool IsNear(Room room)
-        {
-            return Room.Code == room.North 
-                || Room.Code == room.South 
-                || Room.Code == room.East 
-                || Room.Code == room.West;
-        }
     }
 }

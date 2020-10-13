@@ -33,5 +33,13 @@ namespace ConsoleDungeon.Models
         {
             IsLocked = false;
         }
+
+        public bool IsAdjacent(Room room)
+        {
+            return Code.Equals(room?.North)
+                    || Code.Equals(room?.South)
+                    || Code.Equals(room?.East)
+                    || Code.Equals(room?.West);
+        }
     }
 }

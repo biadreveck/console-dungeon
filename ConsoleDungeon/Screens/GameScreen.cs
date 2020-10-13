@@ -81,9 +81,6 @@ namespace ConsoleDungeon.Screens
             GuiHelper.PlayerStatus(State.Player);
             Console.WriteLine();
 
-            GuiHelper.Warning($"O inimigo está na sala: {State.Enemy.Room.Name}");
-            Console.WriteLine();
-
             var player = State.Player;
 
             if (State.EnemyFound)
@@ -91,7 +88,7 @@ namespace ConsoleDungeon.Screens
                 GuiHelper.Warning("Você encontrou o inimigo!");
                 Console.WriteLine();
             }
-            else if (State.Enemy.IsNear(player.Room))
+            else if (player.Room.IsAdjacent(State.Enemy?.Room))
             {
                 GuiHelper.Warning("Você sente a presença do inimigo, ele está por perto! Tome cuidado!");
                 Console.WriteLine();
@@ -197,10 +194,10 @@ namespace ConsoleDungeon.Screens
                 // Move o inimigo em direção ao jogador, se puder
                 if (State.CanMoveEnemy)
                 {
-                    var path = RouteHelper.FindShortestPath(State.CurrentMap, State.Enemy.Room, State.Player.Room);
-                    if (path != null && path.Count > 0)
+                    var nextEnemyRoom = RouteHelper.FindNextRoom(State.CurrentMap, State.Enemy.Room, State.Player.Room);
+                    if (nextEnemyRoom != null)
                     {
-                        State.Enemy.MoveTo(path.First());
+                        State.Enemy.MoveTo(nextEnemyRoom);
                     }
                     else
                     {
